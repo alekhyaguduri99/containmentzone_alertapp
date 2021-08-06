@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/back"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="Welcome !"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_height="wrap_content">
+
+    </TextView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="100dp"
+        android:textSize="15sp"
+        android:text="We need few details before we proceed."
+
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+    </TextView>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Full Name"
+        app:errorEnabled="true"
+        android:layout_marginTop="10dp"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        android:layout_gravity="center"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:inputType="text"
+            android:ems="15"
+            android:id="@+id/name"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Email Id"
+        app:errorEnabled="true"
+        android:layout_marginTop="6dp"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        android:layout_gravity="center"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:inputType="textEmailAddress"
+            android:ems="15"
+            android:id="@+id/email"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+    android:layout_width="wrap_content"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:hint="Mobile Number"
+    app:errorEnabled="true"
+    android:layout_marginTop="6dp"
+    app:boxCornerRadiusBottomEnd="15dp"
+    app:boxCornerRadiusBottomStart="15dp"
+    android:layout_gravity="center"
+    app:boxCornerRadiusTopEnd="15dp"
+    app:boxCornerRadiusTopStart="15dp"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="match_parent"
+        android:inputType="number"
+        android:ems="15"
+        android:id="@+id/mobile"
+        android:textSize="15sp"
+        android:fontFamily="sans-serif"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_height="wrap_content"
+        />
+
+</com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Address"
+        app:errorEnabled="true"
+        android:layout_marginTop="6dp"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        android:layout_gravity="center"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:inputType="textLongMessage"
+            android:ems="15"
+            android:id="@+id/address"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="Password"
+        app:errorEnabled="true"
+        android:layout_marginTop="6dp"
+        app:boxCornerRadiusBottomEnd="15dp"
+        app:boxCornerRadiusBottomStart="15dp"
+        android:layout_gravity="center"
+        app:boxCornerRadiusTopEnd="15dp"
+        app:boxCornerRadiusTopStart="15dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:inputType="textPassword"
+            android:ems="15"
+            android:id="@+id/password"
+            android:textSize="15sp"
+            android:fontFamily="sans-serif"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:layout_width="150dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_rounded"
+        android:drawableEnd="@drawable/forward_wrap"
+        android:textStyle="bold"
+        android:text="Register"
+        android:id="@+id/submit"
+        android:layout_gravity="center"
+        android:elevation="6dp"
+        android:padding="15dp"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:layout_height="50dp">
+
+    </TextView>
+
+    <TextView
+        android:layout_width="150dp"
+        android:textColor="@android:color/white"
+        android:background="@drawable/button_rounded"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:text="Login"
+        android:id="@+id/login"
+        android:layout_gravity="center"
+        android:elevation="6dp"
+        android:padding="15dp"
+        android:gravity="center"
+        android:textAllCaps="false"
+        android:layout_height="50dp">
+
+    </TextView>
+</LinearLayout>
+</LinearLayout>

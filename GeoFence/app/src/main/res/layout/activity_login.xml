@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+
+    android:background="@drawable/back"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:text="Log In"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Email"
+            app:errorEnabled="true"
+
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            android:layout_gravity="center"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="15"
+                android:id="@+id/email"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="wrap_content"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Password"
+            app:errorEnabled="true"
+            android:layout_marginBottom="30dp"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            android:layout_gravity="center"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="15"
+                android:id="@+id/password"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_height="wrap_content"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="150dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_rounded"
+            android:drawableEnd="@drawable/forward_wrap"
+            android:textStyle="bold"
+            android:text="Submit"
+            android:id="@+id/submit"
+            android:layout_gravity="center"
+            android:elevation="6dp"
+            android:padding="15dp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:layout_height="50dp">
+
+        </TextView>
+        <TextView
+            android:layout_width="150dp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/button_rounded"
+            android:textStyle="bold"
+            android:text="Register"
+            android:id="@+id/register"
+            android:layout_gravity="center"
+            android:elevation="6dp"
+            android:layout_marginTop="20dp"
+            android:padding="15dp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:layout_height="50dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>
